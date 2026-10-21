@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "SNS 시간 관리",
-    "slug": "sns-time-guard",
+    "name": "TimeOff",
+    "slug": "timeoff",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "sns-time-guard",
+    "scheme": "timeoff",
     "userInterfaceStyle": "light",
     "splash": {
       "backgroundColor": "#F3F6F1",
@@ -13,16 +13,17 @@
       "resizeMode": "contain"
     },
     "ios": {
-      "supportsTablet": false
+      "supportsTablet": false,
+      "bundleIdentifier": "com.timeoff.app"
     },
     "android": {
       "permissions": [
         "android.permission.PACKAGE_USAGE_STATS"
       ],
-      "package": "com.anonymous.snstimeguard"
+      "package": "com.timeoff.app"
     },
     "web": {
-      "favicon": "./assets/images/icon.png"
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router"
