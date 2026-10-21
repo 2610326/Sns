@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/"
+title = "SNS 시간 관리"
+description = "SNS별 스마트폰 사용시간을 확인하고 하루 사용 한도를 설정해 초과 사용을 줄이는 모바일 앱입니다. Android와 iPhone의 사용 추적 및 제한 권한 차이를 안내합니다."
+version = "1.0.0"
+id = "artifacts/sns-time-guard"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 19251
+
+[services.development]
+run = "pnpm --filter @workspace/sns-time-guard run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sns-time-guard", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/sns-time-guard", "run", "serve" ]
+
+[services.env]
+PORT = "19251"
+BASE_PATH = "/"

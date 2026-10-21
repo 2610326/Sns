@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "SNS 시간 관리",
+    "slug": "sns-time-guard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "sns-time-guard",
+    "userInterfaceStyle": "light",
+    "splash": { "backgroundColor": "#F3F6F1", "image": "./assets/images/icon.png", "resizeMode": "contain" },
+    "ios": { "supportsTablet": false },
+    "android": {},
+    "web": { "favicon": "./assets/images/icon.png" },
+    "plugins": ["expo-router"],
+    "experiments": { "typedRoutes": true, "reactCompiler": true }
+  }
+}
