@@ -1,0 +1,1 @@
+- [Pastel theme preference](theme-preferences.md) — include system/light/dark modes and soft pastel accent palettes.
